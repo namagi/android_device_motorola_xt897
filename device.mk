@@ -54,6 +54,14 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.cdma.subscription=1 \
     DEVICE_PROVISIONED=1
 
+# Low RAM device optimizations
+ADDITIONAL_BUILD_PROPERTIES += \
+    ro.config.low_ram=true \
+    persist.sys.force_highendgfx=true \
+    config.disable_atlas=true \
+    ro.config.max_starting_bg=6 \
+    ro.sys.fw.bg_apps_limit=12
+
 $(call inherit-product, device/motorola/qcom-common/modules/nfc/nfc.mk)
 $(call inherit-product, vendor/motorola/xt897/xt897-vendor.mk)
 
