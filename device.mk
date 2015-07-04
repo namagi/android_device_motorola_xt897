@@ -59,8 +59,8 @@ ADDITIONAL_BUILD_PROPERTIES += \
     ro.config.low_ram=true \
     persist.sys.force_highendgfx=true \
     config.disable_atlas=true \
-    ro.config.max_starting_bg=4 \
-    ro.sys.fw.bg_apps_limit=8
+    ro.config.max_starting_bg=8 \
+    ro.sys.fw.bg_apps_limit=10
 
 $(call inherit-product, device/motorola/qcom-common/modules/nfc/nfc.mk)
 $(call inherit-product, vendor/motorola/xt897/xt897-vendor.mk)
