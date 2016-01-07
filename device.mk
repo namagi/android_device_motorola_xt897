@@ -36,6 +36,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     AsantiKeypad
 
+# Camera (Snap Camera App)
+PRODUCT_PACKAGES += \
+    Snap
+
 # Unlock for US GSM
 PRODUCT_PACKAGES += \
     unlock-us-gsm
