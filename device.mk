@@ -40,6 +40,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Snap
 
+PRODUCT_PACKAGES += \
+    iozone
+
 # Unlock for US GSM
 PRODUCT_PACKAGES += \
     unlock-us-gsm
